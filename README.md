@@ -12,3 +12,5 @@ Repositorio de estudio para aprender GIT
        ![Resultado de los cambios](./resultados/ejercicio_0_1.png)
 6. [x] Revisar el log de git con `git log` o usando el control de cambios de VS Code
        ![Resultados de los cambios realizados](./resultados/ejercicio_0_2.png)
+
+## Ejercicio 1
