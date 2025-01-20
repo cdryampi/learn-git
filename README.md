@@ -33,3 +33,19 @@ Repositorio de estudio para aprender GIT
        ![Resultado de los cambios](./resultados/ejercicio_3_1.png)
 2. [x] Creamos otra rama, por ejemplo `index_espanya`
        ![Resultado de los cambios](./resultados/ejercicio_3_2.png)
+3. [x] Volvemos a la rama `yampi` y vemos los cambios anteriores
+       ![Resultado de los cambios](./resultados/ejercicio_3_3.png)
+4. [x] Comprobamos que los historiales difieren con `git log` y `git checkout`
+       4.1 [x] Comprobamos los logs de la rama `yampi`
+       ![Resultado de los cambios](./resultados/ejercicio_3_4.png)
+       4.2 [x] Comprobamos los logs de la rama `index_espanya`
+       ![Resultado de los cambios](./resultados/ejercicio_3_5.png)
+5. [x] Hemos comprobado que las dos ramas son distintas pero hay que tener en cuenta que la rama `index_espanya` se ha creado a partir de la rama `yampi` y por lo tanto tiene los mismos cambios que la rama `yampi` hasta el momento de la creación de la rama `index_espanya`.
+
+## Ejercicio 4
+
+TBD
+
+## Ejercicio 5
+
+TBD
