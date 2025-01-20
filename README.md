@@ -30,3 +30,6 @@ Repositorio de estudio para aprender GIT
 ## Ejercicio 3
 
 1. [x] Creamos un archivo cualquiera y hacemos un commit
+       ![Resultado de los cambios](./resultados/ejercicio_3_1.png)
+2. [x] Creamos otra rama, por ejemplo `index_espanya`
+       ![Resultado de los cambios](./resultados/ejercicio_3_2.png)
