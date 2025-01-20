@@ -1,3 +1,10 @@
+// trabajamos así de precario porque no tenemos un proyecto completo de Vue.js
+
+const API_BASE_URL =
+  window.location.hostname === "localhost"
+    ? "/api/posts" // Proxy en desarrollo
+    : "https://curso-paro-production.up.railway.app/api/posts"; // Producción
+
 const app = Vue.createApp({
   data() {
     return {
@@ -6,7 +13,7 @@ const app = Vue.createApp({
   },
   async created() {
     try {
-      const response = await fetch("/api/posts"); // Proxy configurado en Vite
+      const response = await fetch(API_BASE_URL); // Proxy configurado en Vite
       if (!response.ok)
         throw new Error(`HTTP error! Status: ${response.status}`);
       const data = await response.json();
