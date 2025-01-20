@@ -16,4 +16,11 @@ Repositorio de estudio para aprender GIT
 ## Ejercicio 1
 
 1. [x] Crear un repositorio local o usar uno existente. (En este caso usamos el repositorio mismo)
-2. [x] Añadimos un index.html básico. Este contiene un pequeño texto y título de una API propia y reenderiza una provincia de España pero necesita un servidor de Vite para realizar la petición al servidor externo. iniciar la aplicación con `npm run dev`
+2. [x] Añadimos un index.html básico. Este contiene un pequeño texto, descripción y imagen de una API propia y reenderiza una provincia de España pero necesita un servidor de Vite para realizar la petición al servidor externo. iniciar la aplicación con `npm run dev`
+       ![Resultado de los cambios](./resultados/ejercicio_1_2.png)
+       ![Resultado del index](./resultados/ejercicio_1_3.png)
+
+## Ejercicio 2
+
+1. [x] Clonar el repositorio `learn-git`. (**importante:** se ha realizado un fork del repositorio original y se esta trabajando en una rama derivada del mismo fork).
+2. [x] Hacer `git pull` para actualizar el contenido.
