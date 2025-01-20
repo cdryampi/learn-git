@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Provincias de España</title>
+    <title>Provincias multiculturales de España</title>
     <!-- Import Vue.js -->
     <script src="https://unpkg.com/vue@3.0.11/dist/vue.global.js"></script>
     <script type="module" src="/@vite/client"></script>
@@ -37,6 +37,13 @@
         max-width: 350px;
         text-align: center;
       }
+      .bandera {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 300px;
+        border-radius: 5px;
+      }
       img {
         width: 100%;
         border-radius: 5px;
@@ -47,7 +54,13 @@
     </style>
   </head>
   <body>
-    <h1>Las provincias de España:</h1>
+    <h1>Provincias multiculturales de España:</h1>
+    <img
+      src="./bandera_de_espanya_multicural.png"
+      alt="España multicultural"
+      srcset="./bandera_de_espanya_multicural.png"
+      class="bandera"
+    />
     <div id="app">
       <div v-for="provincia in provincias" :key="provincia.id">
         <provincia-display
