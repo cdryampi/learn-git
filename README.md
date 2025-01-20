@@ -24,3 +24,9 @@ Repositorio de estudio para aprender GIT
 
 1. [x] Clonar el repositorio `learn-git`. (**importante:** se ha realizado un fork del repositorio original y se esta trabajando en una rama derivada del mismo fork).
 2. [x] Hacer `git pull` para actualizar el contenido.
+3. [x] Cambiamos de rama a `main` con `git checkout main` y hacemos `git pull` para actualizar la rama.
+       ![Resultado de los cambios](./resultados/ejercicio_2_1.png)
+
+## Ejercicio 3
+
+1. [x] Creamos un archivo cualquiera y hacemos un commit
