@@ -14,3 +14,6 @@ Repositorio de estudio para aprender GIT
        ![Resultados de los cambios realizados](./resultados/ejercicio_0_2.png)
 
 ## Ejercicio 1
+
+1. [x] Crear un repositorio local o usar uno existente. (En este caso usamos el repositorio mismo)
+2. [x] Añadimos un index.html básico. Este contiene un pequeño texto y título de una API propia y reenderiza una provincia de España pero necesita un servidor de Vite para realizar la petición al servidor externo. iniciar la aplicación con `npm run dev`

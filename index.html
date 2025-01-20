@@ -1,57 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resumen: Aprendiendo Git</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-gray-100 text-gray-800 font-sans">
-    <header class="bg-blue-600 text-white py-4">
-        <div class="container mx-auto text-center">
-            <h1 class="text-3xl font-bold">Resumen del Libro: Aprendiendo Git</h1>
-            <p class="text-lg">Por Miguel Ángel Durán García</p>
-        </div>
-    </header>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Provincias de España</title>
+    <!-- Import Vue.js -->
+    <script src="https://unpkg.com/vue@3.0.11/dist/vue.global.js"></script>
+    <script type="module" src="/@vite/client"></script>
+    <link
+      rel="shortcut icon"
+      href="./bandera_de_espanya_multicural.png"
+      type="image/x-icon"
+    />
+    <!-- estilos básicos -->
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        text-align: center;
+      }
+      #app {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 1.5rem;
+        padding: 1rem;
+        justify-content: center;
+      }
+      .provincia {
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin: 10px;
+        padding: 10px;
+        width: 200px;
+        max-width: 350px;
+        text-align: center;
+      }
+      img {
+        width: 100%;
+        border-radius: 5px;
+        max-width: 250px;
+        max-height: 250px;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Las provincias de España:</h1>
+    <div id="app">
+      <div v-for="provincia in provincias" :key="provincia.id">
+        <provincia-display
+          :provincia="provincia"
+          class="provincia"
+        ></provincia-display>
+      </div>
+    </div>
 
-    <main class="container mx-auto py-8 px-4">
-        <section class="mb-8">
-            <h2 class="text-2xl font-semibold text-blue-600 mb-4">Introducción</h2>
-            <p class="text-gray-700">El libro <strong>"Aprendiendo Git"</strong> es una guía para aprender y dominar Git, un sistema de control de versiones ampliamente utilizado en el desarrollo de software. Este libro proporciona una base sólida para principiantes y expande el conocimiento de usuarios avanzados.</p>
-        </section>
+    <!-- Import App -->
+    <script src="./main.js"></script>
+    <!-- import Components -->
+    <script src="./components/ProvinciaDisplay.js"></script>
 
-        <section class="mb-8">
-            <h2 class="text-2xl font-semibold text-blue-600 mb-4">Contenidos Principales</h2>
-            <ul class="list-disc list-inside text-gray-700">
-                <li><strong>Conceptos básicos:</strong> Control de versiones, Git vs GitHub, estados en Git.</li>
-                <li><strong>Trabajando con Git Localmente:</strong> Inicialización de repositorios, comandos básicos, `.gitignore`.</li>
-                <li><strong>Git Remoto:</strong> Conexión de repositorios locales con remotos, uso de SSH, creación de Pull Requests.</li>
-                <li><strong>GitHub CLI:</strong> Uso de comandos como `gh repo clone`, `gh pr create` y más.</li>
-                <li><strong>Automatización:</strong> GitHub Actions para integración y despliegue continuo.</li>
-            </ul>
-        </section>
-
-        <section class="mb-8">
-            <h2 class="text-2xl font-semibold text-blue-600 mb-4">GitHub CLI</h2>
-            <p class="text-gray-700">GitHub CLI (`gh`) permite interactuar con GitHub directamente desde la terminal. Esto incluye clonar repositorios, crear Pull Requests, y gestionar issues de manera eficiente.</p>
-            <h3 class="text-xl font-semibold text-gray-800 mt-4">Comandos útiles:</h3>
-            <ul class="list-disc list-inside text-gray-700">
-                <li>`gh repo clone <owner>/<repo>`: Clona un repositorio.</li>
-                <li>`gh pr create --title "Título" --body "Descripción"`: Crea una Pull Request.</li>
-                <li>`gh issue create`: Abre un nuevo issue en el repositorio.</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2 class="text-2xl font-semibold text-blue-600 mb-4">Conclusión</h2>
-            <p class="text-gray-700">El libro "Aprendiendo Git" no solo enseña los conceptos fundamentales de Git, sino que también proporciona herramientas avanzadas como GitHub CLI y GitHub Actions para optimizar flujos de trabajo. Es una guía completa para cualquier desarrollador interesado en mejorar su manejo de Git.</p>
-        </section>
-    </main>
-
-    <footer class="bg-blue-600 text-white py-4 mt-8">
-        <div class="container mx-auto text-center">
-            <p>&copy; 2023 Aprendiendo Git. Todos los derechos reservados.</p>
-        </div>
-    </footer>
-</body>
+    <!-- Mount App -->
+    <script>
+      const mountedApp = app.mount("#app");
+    </script>
+  </body>
 </html>
