@@ -22,6 +22,11 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 18 # Usa la versión recomendada por Vite
+      # 2.1 Copiar archivos a public porque tenemos el index con vue incustrado y no se puede hacer build con Vue.
+      - name: Copy files to public
+        run: |
+          mkdir -p public
+          cp ./main.js public/ && cp -r ./components public/
 
       # 3. Instalar dependencias
       - name: Install dependencies
