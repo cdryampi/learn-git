@@ -2,13 +2,13 @@
 /.vite/
 /mi-primer-repositorio/
 .DS_Store
-bandera_de_espanya_multicural.png
-index.html
-package-lock.json
-package.json
-vite.config.js
-components/
-.github/
+./bandera_de_espanya_multicural.png
+./index.html
+./package-lock.json
+./package.json
+./vite.config.js
+/components/
+/.github/
 # repositorios de soluciones:
 soluciones/01
 soluciones/02
