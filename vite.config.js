@@ -5,7 +5,7 @@ export default defineConfig({
     // Configuración del servidor de desarrollo
     proxy: {
       "/api": {
-        target: "https://curso-paro-production.up.railway.app/", // URL de la API
+        target: "https://web-production-957d3.up.railway.app/", // URL de la API
         changeOrigin: true,
       },
     },
