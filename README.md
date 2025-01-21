@@ -49,6 +49,9 @@ Repositorio de estudio para aprender GIT
 2. [x] Corregir el error y hacer un commit con el mensaje "Corrige el bug relacionado con la descripcion"
        ![Resultado de los cambios](./resultados/ejercicio_4_2.png)
 3. [x] Cambiar de nuevo a la rama `yampi` y combinar los cambios desde `bug-descripcion` con `git merge`.
+       ![Resultado de los cambios](./resultados/ejercicio_4_3.png)
+4. [x] Resultado de los cambios realizados
+       ![Resultado de los cambios](./resultados/ejercicio_4_4.png)
 
 ## Ejercicio 5
 
