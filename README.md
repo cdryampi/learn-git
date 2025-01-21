@@ -44,7 +44,11 @@ Repositorio de estudio para aprender GIT
 
 ## Ejercicio 4
 
-TBD
+1. [x] Crear una rama nueva para solucionar un bug de un archivo `index.html` con una etiqueta malcerrada.
+       ![Resultado de los cambios](./resultados/ejercicio_4_1.png)
+2. [x] Corregir el error y hacer un commit con el mensaje "Corrige el bug relacionado con la descripcion"
+       ![Resultado de los cambios](./resultados/ejercicio_4_2.png)
+3. [x] Cambiar de nuevo a la rama `yampi` y combinar los cambios desde `bug-descripcion` con `git merge`.
 
 ## Ejercicio 5
 
