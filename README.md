@@ -55,4 +55,9 @@ Repositorio de estudio para aprender GIT
 
 ## Ejercicio 5
 
-TBD
+1. [x] Revisar la configuración actual con `git config --list`.
+2. [x] Cambiar el nombre y el correo global usando `git config --global`.
+3. [x] Crear un repositorio nuevo y comprueba que el commit lleva la configuración actualizada.
+4. [x] Si es necesario, cambia temporalmente la configuración local solo para ese repositorio.
+5. [x] Haz un commit con la configuración modificada y verifica los detalles con `git log`.
+       ![Resultado de los cambios](./resultados/ejercicio_5_1.png)
