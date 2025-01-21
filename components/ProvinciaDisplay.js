@@ -2,20 +2,10 @@ app.component("provincia-display", {
   props: ["provincia"],
   template: `
         <div>
-          <h2>{{ provincia.title }}</h2>
-          <img :src="provinciaImageUrl" :alt="provincia.featuredImage.alt" />
-          <p>{{ provinciaDescription }}</p>
+          <h2>{{ provincia.nombre }}</h2>
+          <img :src="provincia.imagen.file" :alt="provincia.imagen.title" />
+          <p>{{ provincia.codigo }}</p>
         </div>
       `,
-  computed: {
-    provinciaDescription() {
-      return (
-        this.provincia.content.root.children[0].children[0].text ||
-        "Sin descripción"
-      );
-    },
-    provinciaImageUrl() {
-      return `https://curso-paro-production.up.railway.app${this.provincia.featuredImage.url}`;
-    },
-  },
+  computed: {},
 });

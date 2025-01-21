@@ -2,8 +2,8 @@
 
 const API_BASE_URL =
   window.location.hostname === "localhost"
-    ? "/api/posts" // Proxy en desarrollo
-    : "https://curso-paro-production.up.railway.app/api/posts"; // Producción
+    ? "/api/comunidades_autonomas/lista_comunidades/" // Proxy en desarrollo
+    : "https://web-production-957d3.up.railway.app/api/comunidades_autonomas/lista_comunidades/"; // Producción
 
 const app = Vue.createApp({
   data() {
@@ -17,7 +17,7 @@ const app = Vue.createApp({
       if (!response.ok)
         throw new Error(`HTTP error! Status: ${response.status}`);
       const data = await response.json();
-      this.provincias = data.docs; // Asignar los documentos a `provincias`
+      this.provincias = data; // Asignar los documentos a `provincias`
     } catch (error) {
       console.error("Error fetching provincias:", error);
     }
