@@ -249,4 +249,34 @@ Este repositorio cubre un amplio rango de conceptos básicos y avanzados de Git,
 
 ---
 
+### 🚀 **Recursos adicionales**
+
 🚀 Enlace del index.html que se ha utilizado en los ejemplos: [index.html](https://cdryampi.github.io/learn-git/)
+
+Plugins de Git utilizados en el proyecto:
+
+- [Git Graph](https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph)
+- [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
+
+Imagen de git-graph:
+![Git Graph](./resultados/git-graph.png)
+Resumen de la documentación de la API utilizada:
+
+```json
+// Ejemplo de respuesta de la API
+// GET: [endpoint](https://web-production-957d3.up.railway.app/api/comunidades_autonomas/lista_comunidades/)
+{
+  "id": 0,
+  "nombre": "string",
+  "descripcion": "string",
+  "codigo": "st",
+  "imagen": {
+    "file": "http://example.com",
+    "title": "string",
+    "uploaded_at": "2019-08-24T14:15:22Z",
+    "image_for_pc_url": "string", // falta resolver un bug en esta parte
+    "image_for_tablet_url": "string", // falta resolver un bug en esta parte
+    "image_for_mobile_url": "string" // falta resolver un bug en esta parte
+  }
+}
+```
