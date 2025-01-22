@@ -72,3 +72,12 @@ Repositorio de estudio para aprender GIT
 
 4. [x] Comprueba el contenido de `.gitignore` con el comando `git status`.
        ![Resultado de los cambios](./resultados/ejercicio_6_1.png)
+
+## Ejercicio 7
+
+1. [x] Modifica un archivo existente sin añadirlo al staging.
+       ![Resultado de los cambios](./resultados/ejercicio_7_1.png)
+       ![Cambios realizados](./resultados/ejercicio_7_2.png)
+2. [x] Usa `git checkout -- <archivo>` para deshacer los cambios.
+3. [x] Haz un cambio, añádelo al staging con `git add`, y deshaz el staging con `git reset HEAD <archivo>`.
+4. [x] Verifica que el archivo vuelve al estado anterior.
