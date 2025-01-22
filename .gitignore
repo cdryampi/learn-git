@@ -1,7 +1,8 @@
 /node_modules/
 /.vite/
-/mi-primer-repositorio/
+mi-primer-repositorio/
 .DS_Store
+.env
 # repositorios de soluciones:
 soluciones/01
 soluciones/02

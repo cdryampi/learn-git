@@ -61,3 +61,14 @@ Repositorio de estudio para aprender GIT
 4. [x] Si es necesario, cambia temporalmente la configuración local solo para ese repositorio.
 5. [x] Haz un commit con la configuración modificada y verifica los detalles con `git log`.
        ![Resultado de los cambios](./resultados/ejercicio_5_1.png)
+
+## Ejercicio 6
+
+1. [x] Crea un archivo `.gitignore` en tu repositorio.
+2. [x] Añade una regla para ignorar un archivo o carpeta (por ejemplo, `*.log` o `node_modules/`).
+3. [x] Intenta añadir un archivo que coincida con las reglas de `.gitignore` y verifica que no se añade al staging.
+       3.1 [x] Añadimos el fichero .env al repositorio con una variable secreta.
+       ![Resultado de los cambios](./resultados/ejercicio_6_2.png)
+
+4. [x] Comprueba el contenido de `.gitignore` con el comando `git status`.
+       ![Resultado de los cambios](./resultados/ejercicio_6_1.png)
