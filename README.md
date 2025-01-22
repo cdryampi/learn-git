@@ -108,3 +108,16 @@ Repositorio de estudio para aprender GIT
        ![Resultado de los cambios](./resultados/ejercicio_9_2.png)
 5. [x] Sube las etiquetas al repositorio remoto con `git push origin --tags`.
        ![Resultado de los cambios](./resultados/ejercicio_9_3.png)
+
+## Ejercicio 10
+
+1. [x] Haz al menos dos commits con cambios en un mismo archivo.
+2. [x] Usa `git diff` para comparar los cambios entre los commits.
+3. [x] Usa `git log` para identificar los hashes de los commits y compara directamente dos versiones específicas con `git diff <commit1> <commit2>`.
+4. [x] Observa las diferencias y reflexiona sobre cómo el comando `git diff` puede ayudarte a depurar código.
+       4.1 [x] Se ha realizado un `git diff` entre dos commits en la rama `yampi` para revisar los cambios realizados al pasar de realizar una petición a una API de payload cmd a una API de Django rest framework.
+       4.2 [x] Se puede revisar lo que ha cambiado respecto a versiones anteriores pero se ve mejor al realizar un merge.
+       4.3 [x] Cuando hay un conflicto te señala de forma más clara las diferencias entre los archivos.
+       4.4 [x] En cuanto al merge cuando tenemos conflictos nos ayuda a resolverlos de forma más sencilla.
+       4.5 [x] Para cambios de un único archivo es más sencillo revisar los cambios realizados.
+       4.6 [x] Es mejor trabajar con algún editor de texto que nos permita ver los cambios realizados en los archivos.
