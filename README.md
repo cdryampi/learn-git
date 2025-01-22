@@ -87,8 +87,13 @@ Repositorio de estudio para aprender GIT
 
 1. [x] Crea dos ramas: `yampi` y `feature/flex`.
 2. [x] En la rama `yampi`, modifica una línea de un archivo existente y haz un commit.
-       ![Resultado de los cambios](./resultados/ejercicio_8_1.png)
+       2.0.1 [x] Se ha cambiado los estilos de las cajas de `grid` a `flex` en el archivo `index.html` en la rama `feature/flex`.
        2.1 [x] Se ha modificado el fichero de README.md en la rama `yampi` y en la rama `feature/flex` a posta para generar un conflicto en el siguiente paso.
 3. [x] Cambia a `feature/flex`, modifica la misma línea de forma diferente y haz otro commit.
        3.1 [x] Se ha modificado el README.md en la rama `feature/flex` resolviendo los ejercicios y prepararemos la rama para el merge.
 4. [x] Intenta combinar las ramas con git merge `feature/flex` en `yampi` y resuelve el conflicto.
+       ![Resultado al subir la rama `feature/flex`](./resultados/ejercicio_8_1.png)
+       ![Resultado al realizar una petición de PR `yampi`](./resultados/ejercicio_8_2.png)
+       4.1 [x] Se ha resuelto el conflicto en la rama `yampi` y se ha realizado un merge con la rama `feature/flex`.
+       ![Resultado al realizar un merge de la rama `feature/flex` en `yampi`](./resultados/ejercicio_8_3.png)
+       4.2 **Importante:** Hay que tener en cuenta que se ha realizado un merge de la rama `feature/flex` en la rama `yampi` y se ha resuelto el conflicto generado por el nombre una imagen. Por error subí dos imagenes con el mismo nombre y no se ha podido visualizar el resultado incial.
