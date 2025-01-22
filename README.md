@@ -246,3 +246,7 @@ El uso de un editor de texto avanzado (como VS Code, Sublime Text, o cualquier I
 ### 🌟 **Conclusión**
 
 Este repositorio cubre un amplio rango de conceptos básicos y avanzados de Git, incluyendo inicialización, creación de ramas, resolución de conflictos, uso de etiquetas, y manejo de `.gitignore`. Es un recurso útil para cualquier persona que desee aprender Git de manera estructurada y práctica.
+
+---
+
+🚀 Enlace del index.html que se ha utilizado en los ejemplos: [index.html](https://cdryampi.github.io/learn-git/)
