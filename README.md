@@ -97,3 +97,14 @@ Repositorio de estudio para aprender GIT
        4.1 [x] Se ha resuelto el conflicto en la rama `yampi` y se ha realizado un merge con la rama `feature/flex`.
        ![Resultado al realizar un merge de la rama `feature/flex` en `yampi`](./resultados/ejercicio_8_3.png)
        4.2 **Importante:** Hay que tener en cuenta que se ha realizado un merge de la rama `feature/flex` en la rama `yampi` y se ha resuelto el conflicto generado por el nombre una imagen. Por error subí dos imagenes con el mismo nombre y no se ha podido visualizar el resultado incial.
+
+## Ejercicio 9
+
+1. [x] Crea un nuevo commit en tu repositorio.
+       1.1 [x] Se ha creado un nuevo commit en la rama `yampi` con el mensaje "Crea un nuevo commit en la rama yampi".
+2. [x] Crea una etiqueta ligera (lightweight) para el commit con `git tag v.0.5`.
+3. [x] Crea una etiqueta anotada (annotated) para otro commit con `git tag -a vite -m "Rama con servidor de Vite para los ejemplos"`.
+4. [x] Lista las etiquetas existentes con `git tag`.
+       ![Resultado de los cambios](./resultados/ejercicio_9_2.png)
+5. [x] Sube las etiquetas al repositorio remoto con `git push origin --tags`.
+       ![Resultado de los cambios](./resultados/ejercicio_9_3.png)
