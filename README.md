@@ -81,3 +81,14 @@ Repositorio de estudio para aprender GIT
 2. [x] Usa `git checkout -- <archivo>` para deshacer los cambios.
 3. [x] Haz un cambio, añádelo al staging con `git add`, y deshaz el staging con `git reset HEAD <archivo>`.
 4. [x] Verifica que el archivo vuelve al estado anterior.
+       ![Resultado de los cambios](./resultados/ejercicio_7_3.png)
+
+## Ejercicio 8
+
+1. [x] Crea dos ramas: `yampi` y `feature/flex`.
+2. [x] En la rama `yampi`, modifica una línea de un archivo existente y haz un commit.
+       ![Resultado de los cambios](./resultados/ejercicio_8_1.png)
+       2.1 [x] Se ha modificado el fichero de README.md en la rama `yampi` y en la rama `feature/flex` a posta para generar un conflicto en el siguiente paso.
+3. [x] Cambia a `feature/flex`, modifica la misma línea de forma diferente y haz otro commit.
+       3.1 [x] Se ha modificado el README.md en la rama `feature/flex` resolviendo los ejercicios y prepararemos la rama para el merge.
+4. [x] Intenta combinar las ramas con git merge `feature/flex` en `yampi` y resuelve el conflicto.
