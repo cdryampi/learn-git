@@ -1,123 +1,248 @@
-# learn-git
+# Learn Git
 
-Repositorio de estudio para aprender GIT
+Repositorio de estudio para aprender **Git**.
 
-## Ejericio 0
+---
 
-1. [x] Crear un repositorio local llamado `mi-primer-repositorio` (**importante:** no se usan caracteres especiales ni espacios)
-2. [x] Añadir en el .gitignore el archivo `mi-primer-repositorio`(**importante:** no es necesario que se suba al repositorio remoto)
-3. [x] Iniciar git en la carpeta `mi-primer-repositorio` con `git init`
-4. [x] Comprobar que se ha creado una carpeta con una subcarpeta `.git`
-5. [x] Hacer un cambio el mensaje: "Mi primer commit" con un `README.md` donde colocamos el nombre del repositorio
-       ![Resultado de los cambios](./resultados/ejercicio_0_1.png)
-6. [x] Revisar el log de git con `git log` o usando el control de cambios de VS Code
-       ![Resultados de los cambios realizados](./resultados/ejercicio_0_2.png)
+## ✅ **Ejercicio 0**
 
-## Ejercicio 1
+1. ✅ **Crear un repositorio local** llamado `mi-primer-repositorio` (**importante:** no se usan caracteres especiales ni espacios).
+2. ✅ **Añadir al `.gitignore`** el archivo `mi-primer-repositorio` (**importante:** no es necesario que se suba al repositorio remoto).
+3. ✅ **Inicializar Git** en la carpeta `mi-primer-repositorio` con:
+   ```bash
+   git init
+   ```
+4. ✅ Comprobar que se ha creado una carpeta con una subcarpeta `.git`.
+5. ✅ Hacer un commit inicial con el mensaje: `Mi primer commit`:
+   - Crear un archivo `README.md` con el nombre del repositorio.
+     ![Log](./resultados/ejercicio_0_1.png)
+6. ✅ Revisar el log de Git con `git log` o usando el control de cambios de **añadiendo más cambios a Readme.md**.
+   ![Log](./resultados/ejercicio_0_2.png)
 
-1. [x] Crear un repositorio local o usar uno existente. (En este caso usamos el repositorio mismo)
-2. [x] Añadimos un index.html básico. Este contiene un pequeño texto, descripción y imagen de una API propia y reenderiza una provincia de España pero necesita un servidor de Vite para realizar la petición al servidor externo. iniciar la aplicación con `npm run dev`
-       ![Resultado de los cambios](./resultados/ejercicio_1_2.png)
-       ![Resultado del index](./resultados/ejercicio_1_3.png)
+---
 
-## Ejercicio 2
+## 🛠️ **Ejercicio 1**
 
-1. [x] Clonar el repositorio `learn-git`. (**importante:** se ha realizado un fork del repositorio original y se esta trabajando en una rama derivada del mismo fork).
-2. [x] Hacer `git pull` para actualizar el contenido.
-3. [x] Cambiamos de rama a `main` con `git checkout main` y hacemos `git pull` para actualizar la rama.
-       ![Resultado de los cambios](./resultados/ejercicio_2_1.png)
+1. ✅ **Crear un archivo `index.html` básico**:
+   - Contiene un pequeño texto, descripción e imagen de una API externa **Se ha probado payload cmd con pocos éxitos para trabajarlo fullrest**.
+   - La aplicación utiliza un servidor de Vite, que se inicia con:
+     ```bash
+     npm run dev
+     ```
+     ![Cambios](./resultados/ejercicio_1_2.png)
+     ![Vista del index](./resultados/ejercicio_1_3.png)
+2. ✅ **Añadir el archivo al staging** con:
+   ```bash
+   git add index.html
+   ```
+3. ✅ **Hacer un commit** con el mensaje:
+   ```bash
+   git commit -m "Añade archivo index.html"
+   ```
+4. ✅ **Subir los cambios al repositorio remoto** con:
+   ````bash
+       git push
+       ```
+   ````
+5. ✅ **Verificar que los cambios se han subido correctamente**.
+   - Se ha subido correctamente el archivo `index.html` al repositorio remoto y no hay conflictos.
 
-## Ejercicio 3
+---
 
-1. [x] Creamos un archivo cualquiera y hacemos un commit
-       ![Resultado de los cambios](./resultados/ejercicio_3_1.png)
-2. [x] Creamos otra rama, por ejemplo `index_espanya`
-       ![Resultado de los cambios](./resultados/ejercicio_3_2.png)
-3. [x] Volvemos a la rama `yampi` y vemos los cambios anteriores
-       ![Resultado de los cambios](./resultados/ejercicio_3_3.png)
-4. [x] Comprobamos que los historiales difieren con `git log` y `git checkout`
-       4.1 [x] Comprobamos los logs de la rama `yampi`
-       ![Resultado de los cambios](./resultados/ejercicio_3_4.png)
-       4.2 [x] Comprobamos los logs de la rama `index_espanya`
-       ![Resultado de los cambios](./resultados/ejercicio_3_5.png)
-5. [x] Hemos comprobado que las dos ramas son distintas pero hay que tener en cuenta que la rama `index_espanya` se ha creado a partir de la rama `yampi` y por lo tanto tiene los mismos cambios que la rama `yampi` hasta el momento de la creación de la rama `index_espanya`.
+## 🔁 **Ejercicio 2**
 
-## Ejercicio 4
+1. ✅ Clonar el repositorio `learn-git`.
+   - **Importante:** Se realiza un fork del repositorio original.
+2. ✅ Hacer un `git pull` para actualizar el contenido.
+3. ✅ Cambiar a la rama `main` y actualizarla:
+   ```bash
+   git checkout main
+   git pull
+   ```
+   ![Resultados](./resultados/ejercicio_2_1.png)
+4. 🛠️ Se tendrá que Resolver periodicante los conflictos de .gitignore de proyecto princial con el local.
 
-1. [x] Crear una rama nueva para solucionar un bug de un archivo `index.html` con una etiqueta malcerrada.
-       ![Resultado de los cambios](./resultados/ejercicio_4_1.png)
-2. [x] Corregir el error y hacer un commit con el mensaje "Corrige el bug relacionado con la descripcion"
-       ![Resultado de los cambios](./resultados/ejercicio_4_2.png)
-3. [x] Cambiar de nuevo a la rama `yampi` y combinar los cambios desde `bug-descripcion` con `git merge`.
-       ![Resultado de los cambios](./resultados/ejercicio_4_3.png)
-4. [x] Resultado de los cambios realizados
-       ![Resultado de los cambios](./resultados/ejercicio_4_4.png)
+---
 
-## Ejercicio 5
+## 🌿 **Ejercicio 3**
 
-1. [x] Revisar la configuración actual con `git config --list`.
-2. [x] Cambiar el nombre y el correo global usando `git config --global`.
-3. [x] Crear un repositorio nuevo y comprueba que el commit lleva la configuración actualizada.
-4. [x] Si es necesario, cambia temporalmente la configuración local solo para ese repositorio.
-5. [x] Haz un commit con la configuración modificada y verifica los detalles con `git log`.
-       ![Resultado de los cambios](./resultados/ejercicio_5_1.png)
+1. ✅ Crear un archivo cualquiera y hacer un commit.
+   ![Resultado](./resultados/ejercicio_3_1.png)
+2. ✅ Crear una nueva rama llamada `index_espanya` **Hacemos en index.html más inclusivo**.
+   ![Resultado](./resultados/ejercicio_3_2.png)
+3. ✅ Cambiar a la rama `yampi` y ver los cambios anteriores **Esta versión es menos inclusiva**.
+   ![Resultado](./resultados/ejercicio_3_3.png)
+4. ✅ Comprobar que los historiales de ambas ramas difieren:
+   ```bash
+   git log
+   git checkout
+   ```
+   - Logs de la rama `yampi`:
+     ![Logs](./resultados/ejercicio_3_4.png)
+   - Logs de la rama `index_espanya`:
+     ![Logs](./resultados/ejercicio_3_5.png)
 
-## Ejercicio 6
+---
 
-1. [x] Crea un archivo `.gitignore` en tu repositorio.
-2. [x] Añade una regla para ignorar un archivo o carpeta (por ejemplo, `*.log` o `node_modules/`).
-3. [x] Intenta añadir un archivo que coincida con las reglas de `.gitignore` y verifica que no se añade al staging.
-       3.1 [x] Añadimos el fichero .env al repositorio con una variable secreta.
-       ![Resultado de los cambios](./resultados/ejercicio_6_2.png)
+## 🐛 **Ejercicio 4**
 
-4. [x] Comprueba el contenido de `.gitignore` con el comando `git status`.
-       ![Resultado de los cambios](./resultados/ejercicio_6_1.png)
+1. ✅ Crear una rama nueva llamada `bug-descripcion` para solucionar un error en el archivo `index.html` (etiqueta mal cerrada).
+   ![Resultado](./resultados/ejercicio_4_1.png)
+2. ✅ Corregir el error y hacer un commit con el mensaje:
+   ```
+   Corrige el bug relacionado con la descripción
+   ```
+   ![Resultado](./resultados/ejercicio_4_2.png)
+3. ✅ Cambiar a la rama `yampi` y fusionar los cambios desde `bug-descripcion`:
+   ```bash
+   git checkout yampi
+   git merge bug-descripcion
+   ```
+   ![Resultado](./resultados/ejercicio_4_3.png)
+4. 🛠️ Se ha subido los cambios a Github para hacer un PR para poder resolver conflictos de la rama `yampi` y `bug-descripcion`.
 
-## Ejercicio 7
+---
 
-1. [x] Modifica un archivo existente sin añadirlo al staging.
-       ![Resultado de los cambios](./resultados/ejercicio_7_1.png)
-       ![Cambios realizados](./resultados/ejercicio_7_2.png)
-2. [x] Usa `git checkout -- <archivo>` para deshacer los cambios.
-3. [x] Haz un cambio, añádelo al staging con `git add`, y deshaz el staging con `git reset HEAD <archivo>`.
-4. [x] Verifica que el archivo vuelve al estado anterior.
-       ![Resultado de los cambios](./resultados/ejercicio_7_3.png)
+## ⚙️ **Ejercicio 5**
 
-## Ejercicio 8
+1. ✅ Revisar la configuración actual con:
+   ```bash
+   git config --list
+   ```
+2. ✅ Cambiar el nombre y el correo global con:
+   ```bash
+   git config --global user.name "Tu Nombre"
+   git config --global user.email "tu@email.com"
+   ```
+3. ✅ Crear un nuevo repositorio y verificar que los commits llevan la configuración actualizada.
+   ![Resultado](./resultados/ejercicio_5_1.png)
 
-1. [x] Crea dos ramas: `yampi` y `feature/flex`.
-2. [x] En la rama `yampi`, modifica una línea de un archivo existente y haz un commit.
-       2.0.1 [x] Se ha cambiado los estilos de las cajas de `grid` a `flex` en el archivo `index.html` en la rama `feature/flex`.
-       2.1 [x] Se ha modificado el fichero de README.md en la rama `yampi` y en la rama `feature/flex` a posta para generar un conflicto en el siguiente paso.
-3. [x] Cambia a `feature/flex`, modifica la misma línea de forma diferente y haz otro commit.
-       3.1 [x] Se ha modificado el README.md en la rama `feature/flex` resolviendo los ejercicios y prepararemos la rama para el merge.
-4. [x] Intenta combinar las ramas con git merge `feature/flex` en `yampi` y resuelve el conflicto.
-       ![Resultado al subir la rama `feature/flex`](./resultados/ejercicio_8_1.png)
-       ![Resultado al realizar una petición de PR `yampi`](./resultados/ejercicio_8_2.png)
-       4.1 [x] Se ha resuelto el conflicto en la rama `yampi` y se ha realizado un merge con la rama `feature/flex`.
-       ![Resultado al realizar un merge de la rama `feature/flex` en `yampi`](./resultados/ejercicio_8_3.png)
-       4.2 **Importante:** Hay que tener en cuenta que se ha realizado un merge de la rama `feature/flex` en la rama `yampi` y se ha resuelto el conflicto generado por el nombre una imagen. Por error subí dos imagenes con el mismo nombre y no se ha podido visualizar el resultado incial.
+---
 
-## Ejercicio 9
+## 📝 **Ejercicio 6**
 
-1. [x] Crea un nuevo commit en tu repositorio.
-       1.1 [x] Se ha creado un nuevo commit en la rama `yampi` con el mensaje "Crea un nuevo commit en la rama yampi".
-2. [x] Crea una etiqueta ligera (lightweight) para el commit con `git tag v.0.5`.
-3. [x] Crea una etiqueta anotada (annotated) para otro commit con `git tag -a vite -m "Rama con servidor de Vite para los ejemplos"`.
-4. [x] Lista las etiquetas existentes con `git tag`.
-       ![Resultado de los cambios](./resultados/ejercicio_9_2.png)
-5. [x] Sube las etiquetas al repositorio remoto con `git push origin --tags`.
-       ![Resultado de los cambios](./resultados/ejercicio_9_3.png)
+1. ✅ Crear un archivo `.gitignore` y añadir reglas para ignorar:
+   - Por ejemplo: `*.log`, `node_modules/`, etc.
+2. ✅ Comprobar que los archivos ignorados no se añaden al staging con:
+   ```bash
+   git status
+   ```
+   ![Resultado](./resultados/ejercicio_6_1.png)
+3. 🛠️ La rama yampi es esta basada en la rama del fork principal por lo tanto se tiene que mergear cada vez que su rama padre haga un pull de la rama nodriza.
 
-## Ejercicio 10
+---
 
-1. [x] Haz al menos dos commits con cambios en un mismo archivo.
-2. [x] Usa `git diff` para comparar los cambios entre los commits.
-3. [x] Usa `git log` para identificar los hashes de los commits y compara directamente dos versiones específicas con `git diff <commit1> <commit2>`.
-4. [x] Observa las diferencias y reflexiona sobre cómo el comando `git diff` puede ayudarte a depurar código.
-       4.1 [x] Se ha realizado un `git diff` entre dos commits en la rama `yampi` para revisar los cambios realizados al pasar de realizar una petición a una API de payload cmd a una API de Django rest framework.
-       4.2 [x] Se puede revisar lo que ha cambiado respecto a versiones anteriores pero se ve mejor al realizar un merge.
-       4.3 [x] Cuando hay un conflicto te señala de forma más clara las diferencias entre los archivos.
-       4.4 [x] En cuanto al merge cuando tenemos conflictos nos ayuda a resolverlos de forma más sencilla.
-       4.5 [x] Para cambios de un único archivo es más sencillo revisar los cambios realizados.
-       4.6 [x] Es mejor trabajar con algún editor de texto que nos permita ver los cambios realizados en los archivos.
+## 🔄 **Ejercicio 7**
+
+1. ✅ Modificar un archivo existente sin añadirlo al staging.
+   ![Cambios](./resultados/ejercicio_7_1.png)
+2. ✅ Deshacer los cambios con:
+   ```bash
+   git checkout -- <archivo>
+   ```
+3. ✅ Hacer un cambio, añadirlo al staging y luego deshacerlo con:
+   ```bash
+   git reset HEAD <archivo>
+   ```
+   ![cambios modificados](./resultados/ejercicio_7_2.png)
+   ![cambios anteriores](./resultados/ejercicio_7_3.png)
+
+---
+
+## 🔀 **Ejercicio 8**
+
+1. 🌱 **Crea dos ramas:** `yampi` y `feature/flex`.
+
+   - ¡Listas para trabajar! 🛠️
+
+2. ✏️ **Modifica una línea en la rama `yampi` y haz un commit:**
+
+   - Cambia los estilos de las cajas de `grid` a `flex` en el archivo `index.html` (rama `feature/flex`).
+   - Se modificó el fichero `README.md` en ambas ramas para **forzar un conflicto** en el siguiente paso.
+
+3. 🔧 **Cambia a la rama `feature/flex` y modifica la misma línea:**
+
+   - Resuelve los ejercicios y prepara la rama para el merge.
+
+4. 🚨 **Intenta combinar las ramas `feature/flex` y `yampi`:**
+
+   - Realiza un merge desde `feature/flex` a `yampi` y resuelve los conflictos.
+   - Utiliza `git merge feature/flex` en la rama `yampi`.
+
+5. 🎉 **Resultados:**
+   - Se resolvió el conflicto en `yampi` y se realizó el merge correctamente.
+     ![Resultado del merge](./resultados/ejercicio_8_3.png)
+   - **Nota importante:** Durante el proceso, hubo un problema con imágenes duplicadas (mismo nombre). Esto resultó en un error de visualización inicial que fue corregido posteriormente. ✅
+
+---
+
+## 🏷️ **Ejercicio 9**
+
+1. ✅ Crear una etiqueta ligera (lightweight tag):
+   ```bash
+   git tag v0.5
+   ```
+2. ✅ Crear una etiqueta anotada:
+   ```bash
+   git tag -a vite -m "Rama con servidor de Vite para los ejemplos"
+   ```
+3. ✅ Subir las etiquetas al repositorio remoto:
+   ```bash
+   git push origin --tags
+   ```
+   ![Resultado](./resultados/ejercicio_9_3.png)
+
+---
+
+## 🚀 **Ejercicio 10**
+
+1. ✅ Realizar dos commits con cambios en un mismo archivo.
+2. ✅ Comparar los cambios entre commits con:
+   ```bash
+   git diff <commit1> <commit2>
+   ```
+3. ✅ Observar las diferencias y reflexionar sobre el uso de `git diff` para depuración y resolución de conflictos.
+
+## Observaciones 🚀
+
+### ✅ Comparación entre commits (`git diff`)
+
+Al realizar un `git diff` entre dos commits en la rama _yampi_, se puede revisar con claridad los cambios implementados. En este caso, la transición de una API basada en _payload cmd_ a una API desarrollada con _Django REST Framework_ permite identificar las modificaciones realizadas y entender su impacto en el código.
+
+---
+
+### ✅ Revisión de versiones anteriores
+
+Aunque se pueden revisar los cambios respecto a versiones previas, esta tarea resulta mucho más intuitiva al realizar un **merge**, donde se presentan las diferencias de una forma más visual y estructurada.
+
+---
+
+### ⚠️ Conflictos de merge
+
+Cuando se producen conflictos al realizar un merge, la herramienta de control de versiones destaca de manera precisa las diferencias entre los archivos afectados. Esto facilita la detección de las líneas en conflicto y el proceso de resolución.
+
+---
+
+### 🛠️ Resolución de conflictos
+
+Durante el proceso de merge, Git simplifica la resolución de conflictos al proporcionar una vista detallada de las discrepancias, ayudando a integrar los cambios con mayor fluidez y eficacia.
+
+---
+
+### 📄 Cambios en archivos individuales
+
+Para modificaciones específicas en un único archivo, el proceso de revisión es mucho más ágil, ya que el enfoque se centra en un solo punto de interés, permitiendo identificar los ajustes con rapidez.
+
+---
+
+### ✏️ Uso de editores de texto
+
+El uso de un editor de texto avanzado (como VS Code, Sublime Text, o cualquier IDE moderno) mejora significativamente la experiencia de revisión. Estos editores permiten visualizar los cambios de forma intuitiva, con indicadores visuales, colores y funcionalidades que optimizan la navegación y comprensión del código.
+
+💡 **Estas herramientas y estrategias no solo mejoran la gestión del código, sino que también hacen que el desarrollo sea más eficiente y colaborativo.** 🚀
+
+---
+
+### 🌟 **Conclusión**
+
+Este repositorio cubre un amplio rango de conceptos básicos y avanzados de Git, incluyendo inicialización, creación de ramas, resolución de conflictos, uso de etiquetas, y manejo de `.gitignore`. Es un recurso útil para cualquier persona que desee aprender Git de manera estructurada y práctica.
