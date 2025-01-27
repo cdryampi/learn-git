@@ -144,14 +144,26 @@
 2. Fusionar una rama secundaria a la rama principal con `git merge`.
    2.1 Fusionar las ramas secundarias a la rama principal con `git merge`:
    2.1.1 Al cambiar de rama a la rama `nueva_rama` podemos funcionarla con la rama `yampi` y podemos hacer un `merge` para fusionar las ramas para poder añadir los ficheros de Ejercicios_extra.md y las imágenes de resultados.
+
    ```bash
         git checkout nueva_rama # Cambiar de rama
    ```
+
    2.1.2 Tenemos que subir la nueva rama hacia el github
+
    ```bash
          git push origin nueva_rama # Subir la rama secundaria al repositorio remoto
    ```
+
    2.1.3 Al hacer eso tenemos que hacernos una petición de `pull request` para poder fusionar las ramas. **importante: no fusionar las ramas con la rama nodriza**
    2.1.4 Seleccionamos a `yampi` como base del mismo proyecto, luego como compare seleccionamos a `nueva_rama` y creamos la petición de `pull request`.
    2.1.5 ![resultado](./resultados/opcional_5_1.png)
+
 3. Resolver un conflicto generado al intentar fusionar dos ramas que contienen cambios en la misma línea de un archivo.
+   3.1 Al no tener guardado el fichero de Ejercicios_extra.md en la rama `yampi` y tenerlo en la rama `nueva_rama` podemos hacer un `merge` para fusionar las ramas para poder añadir los ficheros de Ejercicios_extra.md y las imágenes de resultados.
+   ```bash
+       git checkout yampi # Cambiar de rama
+       git pull origin yampi # Actualizar la rama principal
+   ```
+   3.2 Podemos ver el historial de la rama con el GitLens
+   3.3 ![resultado](./resultados/opcional_5_2.png)
