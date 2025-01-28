@@ -208,3 +208,20 @@
          git revert commit_id # Revertir los cambios realizados en un commit específico
    ```
    3.3 ![resultado](./resultados/opcional_6_3.png)
+
+## 7. Análisis de Cambios
+
+1. Generar un parche de cambios con `git diff` y exportarlo a un archivo.
+   1.1 Para generar un parche de cambios con `git diff` y exportarlo a un archivo:
+
+   ```bash
+       git diff > cambios.patch
+   ```
+
+   1.2 Nosotros vamos a generar un parche para otra rama, por ejemplo para la rama de bug/descripción de ejercicios anteriores.
+
+   ```bash
+        git diff yampi bug-descripcion  > cambios.patch
+   ```
+
+2. Usar `git show` para explorar detalles de un commit específico.
