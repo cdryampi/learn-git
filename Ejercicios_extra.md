@@ -206,4 +206,3 @@
          git revert HEAD~1 # Revertir los cambios realizados en un commit específico
    ```
    3.3 ![resultado](./resultados/opcional_6_3.png)
-   precambios
