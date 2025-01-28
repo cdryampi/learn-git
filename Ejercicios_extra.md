@@ -173,6 +173,7 @@
 1. [x] Modificar el mensaje del último commit usando `git commit --amend`.
        1.1 Añadir un comentario a un nuevo commit:
    ```bash
+       git add Ejercicios_extra.md
        git commit -m "asdasdas"
    ```
    1.2 Supongamos que nos equivocamos en el comentario del commit, podemos modificar el comentario del commit con `git commit --amend`:
@@ -181,4 +182,13 @@
    ```
    1.3 ![resultado](./resultados/opcional_6_1.png)
 2. [x] Restaurar un archivo al estado de un commit anterior con `git checkout`.
+       2.1 Añadimos un nuevo commit para poder restaurar el archivo al estado de un commit anterior:
+   ```bash
+        git add Ejercicios_extra.md
+        git commit -m "Nuevo commit"
+   ```
+   2.2 Podemos restaurar un archivo al estado de un commit anterior con `git checkout`:
+   ```bash
+        git checkout HEAD~1 Ejercicios_extra.md
+   ```
 3. [x] Crear un commit que revierta los cambios realizados en un commit específico con `git revert`.
