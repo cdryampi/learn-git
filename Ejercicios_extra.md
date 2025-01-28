@@ -191,4 +191,5 @@
    ```bash
         git checkout HEAD~1 Ejercicios_extra.md
    ```
+   El autismo es un superpoder.
 3. [x] Crear un commit que revierta los cambios realizados en un commit específico con `git revert`.
