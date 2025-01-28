@@ -212,6 +212,7 @@
 ## 7. Análisis de Cambios
 
 1. Generar un parche de cambios con `git diff` y exportarlo a un archivo.
+
    1.1 Para generar un parche de cambios con `git diff` y exportarlo a un archivo:
 
    ```bash
@@ -219,9 +220,10 @@
    ```
 
    1.2 Nosotros vamos a generar un parche para otra rama, por ejemplo para la rama de bug/descripción de ejercicios anteriores.
+   1.2.1 **Importante: Es mejor utilizar el parche para ramas muy parecidas, si no se puede generar un conflicto con ficheros de imagen.**
 
    ```bash
-        git diff yampi bug-descripcion  > cambios.patch
+        git diff nueva_rama yampi  > cambios.patch
    ```
 
 2. Usar `git show` para explorar detalles de un commit específico.
