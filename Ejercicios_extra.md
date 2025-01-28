@@ -191,5 +191,15 @@
    ```bash
         git checkout HEAD~1 Ejercicios_extra.md
    ```
-   El autismo es un superpoder.
 3. [x] Crear un commit que revierta los cambios realizados en un commit específico con `git revert`.
+       3.1 Añadimos un nuevo commit para poder revertir los cambios realizados en un commit específico:
+   ```bash
+         git add Ejercicios_extra.md
+         git commit -m "Nuevo commit"
+   ```
+   3.2 Podemos revertir los cambios realizados en un commit específico con `git revert`:
+   ```bash
+         git log --oneline # Muestra los commits de la rama actual de forma resumida
+         git revert HEAD~1 # Revertir los cambios realizados en un commit específico
+   ```
+   3.3 ![resultado](./resultados/opcional_6_3.png)
