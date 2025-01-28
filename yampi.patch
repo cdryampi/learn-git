@@ -1,0 +1,64 @@
+diff --git a/Ejercicios_extra.md b/Ejercicios_extra.md
+index 7fe12e2..c06071c 100644
+--- a/Ejercicios_extra.md
++++ b/Ejercicios_extra.md
+@@ -221,9 +221,12 @@
+ 
+    1.2 Nosotros vamos a generar un parche para otra rama, por ejemplo para la rama de bug/descripción de ejercicios anteriores.
+    1.2.1 **Importante: Es mejor utilizar el parche para ramas muy parecidas, si no se puede generar un conflicto con ficheros de imagen.**
++   1.2.2 Para generar el parche tenemos que situarnos en la rama de donde queremos generar el parche y ejecutar el siguiente comando:
+ 
++   ````bash
++       git diff nueva_rama yampi  > cambios.patch
+    ```bash
+         git diff nueva_rama yampi  > cambios.patch
+-   ```
++   ````
+ 
+ 2. Usar `git show` para explorar detalles de un commit específico.
+diff --git a/index.html b/index.html
+index ee5f2f7..c42b919 100644
+--- a/index.html
++++ b/index.html
+@@ -2,7 +2,7 @@
+ <html lang="en">
+   <head>
+     <meta charset="UTF-8" />
+-    <title>Provincias de España</title>
++    <title>Provincias de España nueva versión</title>
+     <!-- Import Vue.js -->
+     <script src="https://unpkg.com/vue@3.0.11/dist/vue.global.js"></script>
+     <script type="module" src="/@vite/client"></script>
+diff --git a/vite.config.js b/vite.config.js
+index 0f70f18..fc11559 100644
+--- a/vite.config.js
++++ b/vite.config.js
+@@ -1,14 +1,14 @@
+-import { defineConfig } from "vite";
+-
+-export default defineConfig({
+-  server: {
+-    // Configuración del servidor de desarrollo
+-    proxy: {
+-      "/api": {
+-        target: "https://web-production-957d3.up.railway.app/", // URL de la API
+-        changeOrigin: true,
+-      },
+-    },
+-  },
+-  base: "/learn-git/",
+-});
++import { defineConfig } from "vite";
++
++export default defineConfig({
++  server: {
++    // Configuración del servidor de desarrollo
++    proxy: {
++      "/api": {
++        target: "https://web-production-957d3.up.railway.app/", // URL de la API #ver documentación para más información.
++        changeOrigin: true,
++      },
++    },
++  },
++  base: "/learn-git/",
++});

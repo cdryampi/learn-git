@@ -221,9 +221,19 @@
 
    1.2 Nosotros vamos a generar un parche para otra rama, por ejemplo para la rama de bug/descripción de ejercicios anteriores.
    1.2.1 **Importante: Es mejor utilizar el parche para ramas muy parecidas, si no se puede generar un conflicto con ficheros de imagen.**
+   1.2.2 Para generar el parche tenemos que situarnos en la rama de donde queremos generar el parche y ejecutar el siguiente comando:
 
    ```bash
-        git diff nueva_rama yampi  > cambios.patch
+       git diff yampi path  > yampi.patch
    ```
 
+   1.2.3 ![resultado](./resultados/opcional_7_1.png)
+   1.2.4 Al aplicarse los cambios, no pregunta una confirmación como en merge, sino que aplica los cambios directamente. **Importante: hay que revisar el .patch para estar seguros**
+   1.2.5 Este comando se puede utilizar para aplicar los cambios de un parche a una rama específica sin tener que hacer un merge pero hay que tener cuidado con los conflictos ya que no los ocupa, por lo que hay que revisar el fichero .patch para evitar disgustos.
+
 2. Usar `git show` para explorar detalles de un commit específico.
+   2.1 Podemos usar `git show` para explorar detalles de un commit específico:
+   ```bash
+       git log --oneline # Muestra los commits de la rama actual de forma resumida
+       git show 3b4816a8834f5813aa49710532e0ed527a7bbcc9 # Muestra los detalles de un commit específico
+   ```
