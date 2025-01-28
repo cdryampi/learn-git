@@ -196,6 +196,9 @@
    ```bash
          git add Ejercicios_extra.md
          git commit -m "Nuevo commit"
+         git log --oneline # Muestra los commits de la rama actual de forma resumida
+         git revert HEAD~1 # Revertir los cambios realizados en un commit específico
+         git log --oneline # Muestra los commits de la rama actual de forma resumida
    ```
    3.2 Podemos revertir los cambios realizados en un commit específico con `git revert`:
    ```bash
