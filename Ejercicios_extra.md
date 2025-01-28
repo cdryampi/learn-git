@@ -167,3 +167,18 @@
    ```
    3.2 Podemos ver el historial de la rama con el GitLens
    3.3 ![resultado](./resultados/opcional_5_2.png)
+
+## 6. Correcciones y Ajustes
+
+1. [x] Modificar el mensaje del último commit usando `git commit --amend`.
+       1.1 Añadir un comentario a un nuevo commit:
+   ```bash
+       git commit -m "asdasdas"
+   ```
+   1.2 Supongamos que nos equivocamos en el comentario del commit, podemos modificar el comentario del commit con `git commit --amend`:
+   ```bash
+       git commit --amend -m "Nuevo comentario"
+   ```
+   1.3 ![resultado](./resultados/opcional_6_1.png)
+2. [x] Restaurar un archivo al estado de un commit anterior con `git checkout`.
+3. [x] Crear un commit que revierta los cambios realizados en un commit específico con `git revert`.
